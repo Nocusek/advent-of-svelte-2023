@@ -9,4 +9,4 @@ export interface PageDataResponse {
 }
 
 
-export type KidRecord = Record<string, KidTally>;
+export type KidData = Record<string, KidTally>;
