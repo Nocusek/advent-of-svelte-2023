@@ -1,4 +1,5 @@
 <script lang="ts">
+    import * as Card from '$lib/components/card/index';
 	import { NiceOrNaughtyKids } from "./state.svelte";
 	import type { PageDataResponse } from "./type";
 
@@ -12,6 +13,10 @@
     $inspect('Data', data)
 
 </script>
+
+<Card.Root>
+    <p>tesst</p>
+</Card.Root>
 
 <div class="flex item-start gap-4">
     {#if data.fetchState !== 'ok'}
